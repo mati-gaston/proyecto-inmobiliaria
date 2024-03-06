@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', sans-serif; }
+
+html {
+  font-size: 90%; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #D6E2E9; }
+
+.main-index {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #F6F1EB;
+  align-items: center;
+  min-height: 82vh; }
+  .main-index .section-index img {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto; }
+  .main-index .testimonial {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; }
+    .main-index .testimonial .par {
+      margin-bottom: 20px; }
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #E9E1D3;
+  color: #2E3840; }
+  .footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .footer ul li a {
+      text-decoration: none;
+      color: inherit; }
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+      align-items: flex-start;
+      margin-bottom: 20px; } }

@@ -1,0 +1,28 @@
+.main-index {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color:#F6F1EB;
+    align-items: center;
+    min-height: 82vh;
+
+    .section-index {
+        img {
+            cursor: pointer;
+            max-width: 100%;
+            height: auto;
+            
+        }
+    }
+
+    .testimonial {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        .par {
+            margin-bottom: 20px;
+        }
+    }
+}

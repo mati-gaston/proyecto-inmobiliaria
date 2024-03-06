@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #E9E1D3;
+    color: #2E3840;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+
+    @media (max-width: 768px) { 
+        flex-direction: column; 
+        text-align: center; 
+        align-items: flex-start;
+        margin-bottom: 20px; 
+    }
+}
