@@ -2,11 +2,18 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
+        "title"
         "venta1"
         "venta2"
         "venta3"
         "venta4";
     
+    h1 {
+        grid-area: title;
+        text-align: center;
+        margin: 20px;
+    }
+
     article {
         img {
             width: 100%;
@@ -41,6 +48,7 @@
     @media (min-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
+            "title title"
             "venta1 venta2"
             "venta3 venta4";
     }

@@ -4,10 +4,17 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
+        "title"
         "ami1"
         "ami2"
         "ami3"
         "ami4";
+
+    h1 {
+        grid-area: title;
+        text-align: center;
+        margin: 20px;
+    }
 
     article {
         margin-bottom: 20px;
@@ -43,6 +50,7 @@
     @media (min-width: 768px) {
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
+            "title title"
             "ami1 ami2"
             "ami3 ami4";
     }

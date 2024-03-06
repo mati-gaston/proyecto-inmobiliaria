@@ -30,37 +30,45 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
+            "title"
             "nos1"
             "nos2"
             "nos3"
             "nos4";
-    }
-
-    .nos1 {
-        grid-area: nos1;
-    }
-
-    .nos2 {
-        grid-area: nos2;
-    }
-
-    .nos3 {
-        grid-area: nos3;
-    }
-
-    .nos4 {
-        grid-area: nos4;
-        text-align: center; 
-        font-size: 18px; 
-        color: #333; 
-        margin: 0; 
-        padding: 20px; 
-    }
-
-    @media (min-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "nos1 nos2"
-            "nos3 nos4";
+    
+        h1 {
+            grid-area: title;
+            text-align: center; 
+            margin: 10px;
+        }
+    
+        .nos1 {
+            grid-area: nos1;
+        }
+    
+        .nos2 {
+            grid-area: nos2;
+        }
+    
+        .nos3 {
+            grid-area: nos3;
+        }
+    
+        .nos4 {
+            grid-area: nos4;
+            text-align: center; 
+            font-size: 18px; 
+            color: #333; 
+            margin: 0; 
+            padding: 20px; 
+        }
+    
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+                "title title"
+                "nos1 nos2"
+                "nos3 nos4";
+        }
     }
 }

@@ -62,7 +62,11 @@ header {
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "ami1" "ami2" "ami3" "ami4"; }
+  grid-template-areas: "title" "ami1" "ami2" "ami3" "ami4"; }
+  .mai-amigos h1 {
+    grid-area: title;
+    text-align: center;
+    margin: 20px; }
   .mai-amigos article {
     margin-bottom: 20px;
     background-color: #f9f9f9;
@@ -85,12 +89,15 @@ header {
   @media (min-width: 768px) {
     .mai-amigos {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "ami1 ami2" "ami3 ami4"; } }
+      grid-template-areas: "title title" "ami1 ami2" "ami3 ami4"; } }
 
 .mai-contacto {
   background-color: #F6F1EB;
   padding: 10px;
   /* Estilos para el formulario de contacto */ }
+  .mai-contacto h1 {
+    text-align: center;
+    margin: 20px; }
   .mai-contacto .iframe-container {
     display: flex;
     justify-content: center;
@@ -161,29 +168,37 @@ header {
   .main-nosotros {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "nos1" "nos2" "nos3" "nos4"; }
-  .main-nosotros .nos1 {
-    grid-area: nos1; }
-  .main-nosotros .nos2 {
-    grid-area: nos2; }
-  .main-nosotros .nos3 {
-    grid-area: nos3; }
-  .main-nosotros .nos4 {
-    grid-area: nos4;
-    text-align: center;
-    font-size: 18px;
-    color: #333;
-    margin: 0;
-    padding: 20px; }
-  @media (min-width: 768px) {
-    .main-nosotros {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "nos1 nos2" "nos3 nos4"; } }
+    grid-template-areas: "title" "nos1" "nos2" "nos3" "nos4"; }
+    .main-nosotros h1 {
+      grid-area: title;
+      text-align: center;
+      margin: 10px; }
+    .main-nosotros .nos1 {
+      grid-area: nos1; }
+    .main-nosotros .nos2 {
+      grid-area: nos2; }
+    .main-nosotros .nos3 {
+      grid-area: nos3; }
+    .main-nosotros .nos4 {
+      grid-area: nos4;
+      text-align: center;
+      font-size: 18px;
+      color: #333;
+      margin: 0;
+      padding: 20px; }
+    @media (min-width: 768px) {
+      .main-nosotros {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "title title" "nos1 nos2" "nos3 nos4"; } }
 
 .mai-tienda {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "venta1" "venta2" "venta3" "venta4"; }
+  grid-template-areas: "title" "venta1" "venta2" "venta3" "venta4"; }
+  .mai-tienda h1 {
+    grid-area: title;
+    text-align: center;
+    margin: 20px; }
   .mai-tienda article {
     margin-bottom: 20px;
     background-color: #F6F1EB;
@@ -206,4 +221,4 @@ header {
   @media (min-width: 768px) {
     .mai-tienda {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "venta1 venta2" "venta3 venta4"; } }
+      grid-template-areas: "title title" "venta1 venta2" "venta3 venta4"; } }
