@@ -1,0 +1,49 @@
+.mai-amigos {
+    background-color: #F6F1EB;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "ami1"
+        "ami2"
+        "ami3"
+        "ami4";
+
+    article {
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .ami1 {
+        grid-area: ami1;
+    }
+
+    .ami2 {
+        grid-area: ami2;
+    }
+
+    .ami3 {
+        grid-area: ami3;
+    }
+
+    .ami4 {
+        grid-area: ami4;
+    }
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "ami1 ami2"
+            "ami3 ami4";
+    }
+}

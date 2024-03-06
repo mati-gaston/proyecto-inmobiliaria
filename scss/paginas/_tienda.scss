@@ -1,0 +1,47 @@
+.mai-tienda {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "venta1"
+        "venta2"
+        "venta3"
+        "venta4";
+    
+    article {
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        margin-bottom: 20px;
+        background-color: #F6F1EB;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        &.venta1 {
+            grid-area: venta1;
+        }
+
+        &.venta2 {
+            grid-area: venta2;
+        }
+
+        &.venta3 {
+            grid-area: venta3;
+        }
+
+        &.venta4 {
+            grid-area: venta4;
+        }
+    }
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "venta1 venta2"
+            "venta3 venta4";
+    }
+}

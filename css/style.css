@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Lato&display=swap");
 * {
   margin: 0;
@@ -55,3 +56,154 @@ header {
       text-align: center;
       align-items: flex-start;
       margin-bottom: 20px; } }
+
+.mai-amigos {
+  background-color: #F6F1EB;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "ami1" "ami2" "ami3" "ami4"; }
+  .mai-amigos article {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+    .mai-amigos article img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+  .mai-amigos .ami1 {
+    grid-area: ami1; }
+  .mai-amigos .ami2 {
+    grid-area: ami2; }
+  .mai-amigos .ami3 {
+    grid-area: ami3; }
+  .mai-amigos .ami4 {
+    grid-area: ami4; }
+  @media (min-width: 768px) {
+    .mai-amigos {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "ami1 ami2" "ami3 ami4"; } }
+
+.mai-contacto {
+  background-color: #F6F1EB;
+  padding: 10px;
+  /* Estilos para el formulario de contacto */ }
+  .mai-contacto .iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Para centrar verticalmente */
+    /* Ajusta el tamaño del iframe  */ }
+    .mai-contacto .iframe-container iframe {
+      width: 600px;
+      height: 450px; }
+  .mai-contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+    .mai-contacto form div {
+      margin-bottom: 20px; }
+      .mai-contacto form div label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px; }
+      .mai-contacto form div input[type="text"],
+      .mai-contacto form div input[type="email"],
+      .mai-contacto form div textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; }
+      .mai-contacto form div textarea {
+        height: 100px; }
+    .mai-contacto form button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease; }
+      .mai-contacto form button[type="submit"]:hover {
+        background-color: #0056b3; }
+
+.main-nosotros {
+  background-color: #F6F1EB;
+  padding: 10px; }
+  .main-nosotros div img {
+    width: 100%;
+    /* Ajusta el ancho de la imagen al contenedor del artículo */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    border-radius: 8px;
+    /* Añade bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Añade una sombra suave */ }
+  .main-nosotros img {
+    margin-bottom: 20px;
+    /* Espacio entre los artículos */
+    background-color: #f9f9f9;
+    /* Color de fondo para resaltar los artículos */
+    padding: 20px;
+    /* Espacio interno dentro de los artículos */
+    border-radius: 8px;
+    /* Bordes redondeados para los artículos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave debajo de los artículos */ }
+  .main-nosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nos1" "nos2" "nos3" "nos4"; }
+  .main-nosotros .nos1 {
+    grid-area: nos1; }
+  .main-nosotros .nos2 {
+    grid-area: nos2; }
+  .main-nosotros .nos3 {
+    grid-area: nos3; }
+  .main-nosotros .nos4 {
+    grid-area: nos4;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+    padding: 20px; }
+  @media (min-width: 768px) {
+    .main-nosotros {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "nos1 nos2" "nos3 nos4"; } }
+
+.mai-tienda {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "venta1" "venta2" "venta3" "venta4"; }
+  .mai-tienda article {
+    margin-bottom: 20px;
+    background-color: #F6F1EB;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+    .mai-tienda article img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+    .mai-tienda article.venta1 {
+      grid-area: venta1; }
+    .mai-tienda article.venta2 {
+      grid-area: venta2; }
+    .mai-tienda article.venta3 {
+      grid-area: venta3; }
+    .mai-tienda article.venta4 {
+      grid-area: venta4; }
+  @media (min-width: 768px) {
+    .mai-tienda {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "venta1 venta2" "venta3 venta4"; } }
