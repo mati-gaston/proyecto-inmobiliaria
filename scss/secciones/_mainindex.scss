@@ -21,8 +21,13 @@
         grid-template-columns: 1fr;
         gap: 20px;
 
-        .par {
-            margin-bottom: 20px;
+        .par { font-size: 16px; // Tamaño de fuente del párrafo
+            line-height: 1.5; // Altura de línea del párrafo
+            transition: font-size 0.3s ease; // Transición suave del tamaño de la fuente
+        
+            &:hover {
+                font-size: 18px; // Aumenta el tamaño de la fuente al pasar el cursor sobre el párrafo
+            }
         }
     }
 }

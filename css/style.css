@@ -11,11 +11,17 @@ body {
 html {
   font-size: 90%; }
 
+h1 {
+  font-size: 1.5em; }
+
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #D6E2E9; }
+  background-color: #D6E2E9;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  color: #333; }
 
 .main-index {
   display: grid;
@@ -34,7 +40,11 @@ header {
     grid-template-columns: 1fr;
     gap: 20px; }
     .main-index .testimonial .par {
-      margin-bottom: 20px; }
+      font-size: 16px;
+      line-height: 1.5;
+      transition: font-size 0.3s ease; }
+      .main-index .testimonial .par:hover {
+        font-size: 18px; }
 
 .footer {
   display: flex;
@@ -72,12 +82,26 @@ header {
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; }
     .mai-amigos article img {
       width: 100%;
       height: auto;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+    .mai-amigos article h3 {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      margin: 0;
+      padding: 5px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      box-sizing: border-box; }
   .mai-amigos .ami1 {
     grid-area: ami1; }
   .mai-amigos .ami2 {
@@ -222,3 +246,25 @@ header {
     .mai-tienda {
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "title title" "venta1 venta2" "venta3 venta4"; } }
+
+h1 {
+  animation: agrandar 2s ease-in-out; }
+
+@keyframes agrandar {
+  0% {
+    font-size: 1.5em; }
+  50% {
+    font-size: 2.5em; }
+  100% {
+    font-size: 1.5em; } }
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; }
+  button:hover {
+    background-color: #0056b3; }
