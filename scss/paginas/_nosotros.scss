@@ -5,26 +5,26 @@
 
     div img {
         width: 100%;
-        /* Ajusta el ancho de la imagen al contenedor del artículo */
+        
         height: auto;
-        /* Mantiene la proporción de la imagen */
+       
         border-radius: 8px;
-        /* Añade bordes redondeados */
+
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        /* Añade una sombra suave */
+
     }
 
     img {
         margin-bottom: 20px;
-        /* Espacio entre los artículos */
+
         background-color: #f9f9f9;
-        /* Color de fondo para resaltar los artículos */
+
         padding: 20px;
-        /* Espacio interno dentro de los artículos */
+
         border-radius: 8px;
-        /* Bordes redondeados para los artículos */
+
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Sombra suave debajo de los artículos */
+
     }
 
     & {

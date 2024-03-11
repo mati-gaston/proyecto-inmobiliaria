@@ -22,7 +22,7 @@
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        position: relative; // Agregamos posición relativa al contenedor para posicionar el h3
+        position: relative;
     
         img {
             width: 100%;
@@ -32,18 +32,18 @@
         }
     
         h3 {
-            position: absolute; // Establecemos posición absoluta para el h3
-            bottom: 10px; // Lo posicionamos 10px desde el borde inferior del contenedor
-            left: 0; // Lo posicionamos desde el borde izquierdo del contenedor
-            margin: 0; // Quitamos cualquier margen que tenga por defecto el h3
-            padding: 5px; // Agregamos un pequeño relleno alrededor del texto
-            background-color: rgba(0, 0, 0, 0.5); // Color de fondo semitransparente
-            color: #fff; // Color del texto
-            font-size: 14px; // Tamaño de fuente
-            font-weight: bold; // Peso de la fuente
-            text-align: center; // Centramos el texto horizontalmente
-            width: 100%; // Ajustamos el ancho del h3 al 100% del contenedor
-            box-sizing: border-box; // Incluimos el relleno en el ancho total del elemento
+            position: absolute; 
+            bottom: 10px; 
+            left: 0; 
+            margin: 0; 
+            padding: 5px; 
+            background-color: rgba(0, 0, 0, 0.5); 
+            color: #fff; 
+            font-size: 14px; 
+            font-weight: bold; 
+            text-align: center; 
+            width: 100%; 
+            box-sizing: border-box; 
         }
     }
     

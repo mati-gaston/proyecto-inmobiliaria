@@ -3,14 +3,18 @@ h1 {
   
     @keyframes agrandar {
         0% {
-            font-size: 1.5em; // Tamaño inicial del título
+            font-size: 1.5em; 
         }
         50% {
-            font-size: 2.5em; // Tamaño máximo del título en la mitad de la animación
+            font-size: 2.5em; 
         }
         100% {
-            font-size: 1.5em; // Volver al tamaño original del título
+            font-size: 1.5em; 
         }
     }
 }
 
+.perso {
+    @extend h1; 
+    color: rgba(22, 186, 76, 0.858); 
+}
