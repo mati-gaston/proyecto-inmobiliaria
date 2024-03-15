@@ -1,5 +1,5 @@
 button {
-    background-color: #007bff;
+    background-color: #9ccfed;
     color: #fff; // Color del texto del botón
     padding: 10px 20px; // Espaciado interno del botón
     border: none; // Sin borde
@@ -12,3 +12,10 @@ button {
     }
 } 
 
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #D6E2E9; // Color de fondo deseado
+  &:hover {
+    background-color: darken(#D6E2E9, 10%); // Cambia el color al pasar el mouse
+  }
+}

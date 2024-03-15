@@ -209,6 +209,7 @@ header {
         grid-template-areas: "title title" "nos1 nos2" "nos3 nos4"; } }
 
 .mai-tienda {
+  background-color: #F6F1EB;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "title" "venta1" "venta2" "venta3" "venta4"; }
@@ -255,7 +256,7 @@ h1, .perso {
   color: rgba(22, 186, 76, 0.858); }
 
 button {
-  background-color: #007bff;
+  background-color: #9ccfed;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -264,3 +265,10 @@ button {
   transition: background-color 0.3s ease; }
   button:hover {
     background-color: #0056b3; }
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #D6E2E9; }
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: #b5cbd7; }
