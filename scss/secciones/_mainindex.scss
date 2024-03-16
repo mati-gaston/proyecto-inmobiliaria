@@ -24,6 +24,7 @@
         .par { font-size: 16px; 
             line-height: 1.5; 
             transition: font-size 0.3s ease;
+            text-align: center;
         
             &:hover {
                 font-size: 18px; // Aumenta el tamaño de la fuente al pasar el cursor sobre el párrafo
