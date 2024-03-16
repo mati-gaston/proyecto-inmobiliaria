@@ -7,13 +7,18 @@
     align-items: center;
     min-height: 82vh;
 
+    
+
     .section-index {
+
         img {
             cursor: pointer;
             max-width: 100%;
             height: auto;
-            
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);          
         }
+
     }
 
     .testimonial {
@@ -23,12 +28,7 @@
 
         .par { font-size: 16px; 
             line-height: 1.5; 
-            transition: font-size 0.3s ease;
             text-align: center;
-        
-            &:hover {
-                font-size: 18px; // Aumenta el tamaño de la fuente al pasar el cursor sobre el párrafo
-            }
         }
     }
 }

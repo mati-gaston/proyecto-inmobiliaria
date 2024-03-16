@@ -1,12 +1,14 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Mate+SC&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
-  font-family: 'Inter', sans-serif; }
+  font-family: "Jost", sans-serif; }
 
 html {
   font-size: 90%; }
@@ -14,12 +16,15 @@ html {
 h1, .perso {
   font-size: 1.5em; }
 
+.par {
+  font-family: "Besley", serif; }
+
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #D6E2E9;
-  font-family: "Arial", sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: 600;
   color: #333; }
   header .navbar-brand,
@@ -40,7 +45,9 @@ header {
   .main-index .section-index img {
     cursor: pointer;
     max-width: 100%;
-    height: auto; }
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
   .main-index .testimonial {
     display: grid;
     grid-template-columns: 1fr;
@@ -48,10 +55,7 @@ header {
     .main-index .testimonial .par {
       font-size: 16px;
       line-height: 1.5;
-      transition: font-size 0.3s ease;
       text-align: center; }
-      .main-index .testimonial .par:hover {
-        font-size: 18px; }
 
 .footer {
   display: flex;
@@ -60,7 +64,7 @@ header {
   padding: 20px;
   background-color: #E9E1D3;
   color: #2E3840;
-  font-family: Arial, sans-serif; }
+  font-family: "Jost", sans-serif; }
   .footer .permissions, .footer .social-icons {
     flex: 1;
     text-align: center; }
@@ -265,6 +269,8 @@ header {
       grid-template-areas: "title title" "venta1 venta2" "venta3 venta4"; } }
 
 h1, .perso {
+  text-align: center;
+  padding: 10px;
   animation: agrandar 2s ease-in-out; }
 
 @keyframes agrandar {
