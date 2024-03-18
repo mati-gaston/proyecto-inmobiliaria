@@ -301,3 +301,7 @@ button {
   .carousel-control-prev:hover,
   .carousel-control-next:hover {
     background-color: #b5cbd7; }
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  background-color: transparent; }

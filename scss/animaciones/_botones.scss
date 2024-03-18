@@ -19,3 +19,8 @@ button {
     background-color: darken(#D6E2E9, 10%); // Cambia el color al pasar el mouse
   }
 }
+
+.navbar-toggler:focus,
+    .navbar-toggler:hover {
+        background-color: transparent // Cambia el color de fondo al presionar o al posicionar el cursor */
+    }
