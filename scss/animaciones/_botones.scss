@@ -20,7 +20,15 @@ button {
   }
 }
 
+.navbar-toggler {
+    border-color: black;
+    color: black; 
+    background-color: transparent; /* Cambia el color de fondo al presionar o al posicionar el cursor */
+}
+
 .navbar-toggler:focus,
     .navbar-toggler:hover {
-        background-color: transparent // Cambia el color de fondo al presionar o al posicionar el cursor */
+        border-color: black;
+        color: black; 
+        background-color: transparent; // Cambia el color de fondo al presionar o al posicionar el cursor */
     }

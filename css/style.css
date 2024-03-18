@@ -316,6 +316,14 @@ button {
   .carousel-control-next:hover {
     background-color: #b5cbd7; }
 
+.navbar-toggler {
+  border-color: black;
+  color: black;
+  background-color: transparent;
+  /* Cambia el color de fondo al presionar o al posicionar el cursor */ }
+
 .navbar-toggler:focus,
 .navbar-toggler:hover {
+  border-color: black;
+  color: black;
   background-color: transparent; }
