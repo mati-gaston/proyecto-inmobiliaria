@@ -44,11 +44,6 @@ header {
   header .navbar-nav .nav-link:hover {
     color: #f8f9fa; }
 
-.carousel {
-  max-width: 900px;
-  /* Ajusta el ancho máximo del carousel según tus necesidades */
-  margin: 90px auto 20px; }
-
 .main-index {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -71,6 +66,10 @@ header {
       font-size: 16px;
       line-height: 1.5;
       text-align: center; }
+  .main-index .carousel {
+    max-width: 800px;
+    /* Ajusta el ancho máximo del carousel según tus necesidades */
+    margin: 90px auto 20px; }
 
 .footer {
   display: flex;
