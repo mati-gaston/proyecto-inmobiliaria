@@ -26,7 +26,17 @@ header {
   background-color: #D6E2E9;
   font-family: "Jost", sans-serif;
   font-weight: 600;
-  color: #333; }
+  color: #333;
+  position: fixed;
+  /* Establecer la posición fija para que la barra se mantenga en la parte superior */
+  width: 100%;
+  /* Ancho completo */
+  top: 0;
+  /* Fijar en la parte superior */
+  z-index: 1000;
+  /* Asegurar que esté por encima de otros elementos */
+  transition: background-color 0.3s ease;
+  /* Transición suave para el cambio de color de fondo */ }
   header .navbar-brand,
   header .navbar-nav .nav-link {
     color: #495057; }
@@ -41,7 +51,7 @@ header {
   padding: 20px;
   background-color: #F6F1EB;
   align-items: center;
-  min-height: 82vh; }
+  min-height: 90vh; }
   .main-index .section-index img {
     cursor: pointer;
     max-width: 100%;
@@ -284,7 +294,7 @@ header {
 
 h1, .perso {
   text-align: center;
-  padding: 10px;
+  padding: 40px;
   animation: agrandar 2s ease-in-out; }
 
 @keyframes agrandar {

@@ -6,6 +6,12 @@ header {
     font-family: "Jost", sans-serif;
     font-weight: 600; 
     color: #333; 
+    position: fixed; /* Establecer la posición fija para que la barra se mantenga en la parte superior */
+    width: 100%; /* Ancho completo */
+    top: 0; /* Fijar en la parte superior */
+    z-index: 1000; /* Asegurar que esté por encima de otros elementos */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+
 
 
     .navbar-brand,
