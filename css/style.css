@@ -148,41 +148,51 @@ header {
       grid-template-areas: "title title" "ami1 ami2" "ami3 ami4"; } }
 
 .mai-contacto {
-  background-color: #F6F1EB;
+  background-color: #f6f1eb;
   padding: 10px; }
   .mai-contacto h1, .mai-contacto .perso {
     text-align: center;
-    margin: 20px; }
+    margin: 20px;
+    font-size: 2rem; }
   .mai-contacto .iframe-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; }
+    height: 50vh; }
     .mai-contacto .iframe-container iframe {
-      width: 600px;
-      height: 450px; }
+      width: 100%;
+      max-width: 600px;
+      height: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
   .mai-contacto form {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-    .mai-contacto form div {
+    .mai-contacto form .form-group {
       margin-bottom: 20px; }
-      .mai-contacto form div label {
+      .mai-contacto form .form-group label {
         display: block;
         font-weight: bold;
-        margin-bottom: 5px; }
-      .mai-contacto form div input[type="text"],
-      .mai-contacto form div input[type="email"],
-      .mai-contacto form div textarea {
-        width: 100%;
+        margin-bottom: 5px;
+        color: #333; }
+      .mai-contacto form .form-group input[type="text"],
+      .mai-contacto form .form-group input[type="email"],
+      .mai-contacto form .form-group textarea {
+        width: calc(100% - 20px);
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
-        box-sizing: border-box; }
-      .mai-contacto form div textarea {
+        box-sizing: border-box;
+        transition: border-color 0.3s ease; }
+        .mai-contacto form .form-group input[type="text"]:focus,
+        .mai-contacto form .form-group input[type="email"]:focus,
+        .mai-contacto form .form-group textarea:focus {
+          border-color: #007bff; }
+      .mai-contacto form .form-group textarea {
         height: 100px; }
     .mai-contacto form button[type="submit"] {
       padding: 10px 20px;
@@ -239,7 +249,7 @@ header {
   background-color: #F6F1EB;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "title" "venta1" "venta2" "venta3" "venta4"; }
+  grid-template-areas: "title" "venta1" "venta2" "venta3" "venta4" "venta5" "venta6"; }
   .mai-tienda h1, .mai-tienda .perso {
     grid-area: title;
     text-align: center;
@@ -263,10 +273,14 @@ header {
       grid-area: venta3; }
     .mai-tienda article.venta4 {
       grid-area: venta4; }
+    .mai-tienda article.venta5 {
+      grid-area: venta5; }
+    .mai-tienda article.venta6 {
+      grid-area: venta6; }
   @media (min-width: 768px) {
     .mai-tienda {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "title title" "venta1 venta2" "venta3 venta4"; } }
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "title title title" "venta1 venta2 venta3" "venta4 venta5 venta6"; } }
 
 h1, .perso {
   text-align: center;

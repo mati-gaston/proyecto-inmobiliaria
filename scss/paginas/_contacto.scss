@@ -1,50 +1,59 @@
 .mai-contacto {
-    background-color: #F6F1EB;
+    background-color: #f6f1eb;
     padding: 10px;
 
     h1 {
-        text-align: center; 
+        text-align: center;
         margin: 20px;
+        font-size: 2rem;
     }
 
     .iframe-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh; 
-        
+        height: 50vh;
+
         iframe {
-            width: 600px;
-            height: 450px;
+            width: 100%;
+            max-width: 600px;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     }
 
-    
     form {
         max-width: 600px;
         margin: 0 auto;
         padding: 20px;
-        background-color: #f9f9f9;
+        background-color: #fff;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
-        div {
+        .form-group {
             margin-bottom: 20px;
 
             label {
                 display: block;
                 font-weight: bold;
                 margin-bottom: 5px;
+                color: #333;
             }
 
             input[type="text"],
             input[type="email"],
             textarea {
-                width: 100%;
+                width: calc(100% - 20px);
                 padding: 10px;
                 border: 1px solid #ccc;
                 border-radius: 5px;
                 box-sizing: border-box;
+                transition: border-color 0.3s ease;
+
+                &:focus {
+                    border-color: #007bff;
+                }
             }
 
             textarea {

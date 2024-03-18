@@ -7,7 +7,9 @@
         "venta1"
         "venta2"
         "venta3"
-        "venta4";
+        "venta4"
+        "venta5"
+        "venta6";
     
     h1 {
         grid-area: title;
@@ -44,13 +46,21 @@
         &.venta4 {
             grid-area: venta4;
         }
+
+        &.venta5 {
+            grid-area: venta5;
+        }
+
+        &.venta6 {
+            grid-area: venta6;
+        }
     }
 
     @media (min-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
-            "title title"
-            "venta1 venta2"
-            "venta3 venta4";
+            "title title title"
+            "venta1 venta2 venta3"
+            "venta4 venta5 venta6";
     }
 }
